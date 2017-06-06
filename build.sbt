@@ -14,6 +14,5 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor" % akkaVersion,
   "com.typesafe.akka" %% "akka-stream" % akkaVersion,
   "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
-  "com.typesafe.scala-logging" %% "scala-logging" % "3.5.0",
-  "org.slf4j" % "slf4j-simple" % "1.7.22"
+  "ch.qos.logback" % "logback-classic" % "1.2.3"
 )
