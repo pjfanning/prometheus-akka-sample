@@ -8,7 +8,7 @@ val akkaVersion = "2.5.2"
 val akkaHttpVersion = "10.0.7"
 
 libraryDependencies ++= Seq(
-  "com.github.pjfanning" %% "prometheus-akka" % "0.7.0-rc1",
+  "com.github.pjfanning" %% "prometheus-akka" % "0.7.0-rc2",
   "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-actor" % akkaVersion,
