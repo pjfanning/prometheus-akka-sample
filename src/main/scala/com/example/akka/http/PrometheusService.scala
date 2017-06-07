@@ -1,8 +1,8 @@
 package com.example.akka.http
 
-import java.io._
+import java.io.{ OutputStreamWriter, PipedInputStream, PipedOutputStream }
 
-import scala.concurrent.{ExecutionContext, Future}
+import scala.concurrent.{ ExecutionContext, Future }
 
 import akka.http.scaladsl.model.{ HttpCharsets, HttpEntity, MediaType }
 import akka.http.scaladsl.server.{ Directives, Route }
@@ -26,6 +26,7 @@ object PrometheusService extends Directives {
             TextFormat.write004(out, CollectorRegistry.defaultRegistry.metricFamilySamples())
             out.flush()
           } finally {
+            in.close()
             out.close()
           }
         }
