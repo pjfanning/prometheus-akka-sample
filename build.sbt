@@ -2,13 +2,14 @@ name := "prometheus-akka-sample"
 
 scalaVersion := "2.12.2"
 
-resolvers += "jitpack" at "https://jitpack.io"
+
+resolvers += Resolver.sonatypeRepo("releases")
 
 val akkaVersion = "2.5.2"
 val akkaHttpVersion = "10.0.7"
 
 libraryDependencies ++= Seq(
-  "com.github.pjfanning" %% "prometheus-akka" % "0.7.0-rc2",
+  "com.workday" %% "prometheus-akka" % "0.7.0",
   "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-actor" % akkaVersion,
