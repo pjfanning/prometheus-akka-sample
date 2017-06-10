@@ -26,7 +26,6 @@ object PrometheusService extends Directives {
             TextFormat.write004(out, CollectorRegistry.defaultRegistry.metricFamilySamples())
             out.flush()
           } finally {
-            in.close()
             out.close()
           }
         }
