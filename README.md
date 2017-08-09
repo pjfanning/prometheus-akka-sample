@@ -10,6 +10,13 @@ This plugin basically adds this to the java runtime command.
 
 ```-javaagent:/path/to/aspectjweaver-1.8.10.jar```
 
+If you want to use prometheus-akka with your own application, ensure that you startup script adds something like this:
+
+```bash
+JAVA_AGENT="-javaagent:$BASE/lib/aspectjweaver-1.8.10.jar"
+$JAVA_HOME/bin/java $JAVA_AGENT -cp $CP $JVM_OPTS $CLASS_NAME
+```
+
 To query the metrics endpoint, use:
 
 ```curl http://localhost:12345/metrics```
