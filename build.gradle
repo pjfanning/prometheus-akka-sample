@@ -1,0 +1,41 @@
+apply plugin: 'scala'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+description = 'Prometheus metrics for Akka (based on Kamon-Akka)'
+
+mainClassName = 'com.example.akka.Main'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    scalaVersion = '2.12'
+    scalaPointVersion = "$scalaVersion.3"
+    akkaVersion = '2.5.4'
+    akkaHttpVersion = '10.0.9'
+    aspectjweaverVersion = '1.8.10'
+}
+
+configurations {
+  runAgent
+}
+
+dependencies {
+    compile "org.scala-lang:scala-library:$scalaPointVersion"
+    compile "com.typesafe.akka:akka-actor_$scalaVersion:$akkaVersion"
+    compile "com.typesafe.akka:akka-slf4j_$scalaVersion:$akkaVersion"
+    compile "com.typesafe.akka:akka-stream_$scalaVersion:$akkaVersion"
+    compile "com.typesafe.akka:akka-http_$scalaVersion:$akkaHttpVersion"
+    compile "com.workday:prometheus-akka_$scalaVersion:0.7.0"
+    compile 'ch.qos.logback:logback-classic:1.2.3'
+    runtime "org.aspectj:aspectjweaver:$aspectjweaverVersion"
+    runAgent "org.aspectj:aspectjweaver:$aspectjweaverVersion"
+}
+
+applicationDefaultJvmArgs = [
+    "-javaagent:${configurations.runAgent.singleFile}"
+]
+

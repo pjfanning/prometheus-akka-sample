@@ -1,6 +1,6 @@
 name := "prometheus-akka-sample"
 
-scalaVersion := "2.12.2"
+scalaVersion := "2.12.3"
 
 resolvers += Resolver.sonatypeRepo("releases")
 resolvers += Resolver.sonatypeRepo("snapshots")
