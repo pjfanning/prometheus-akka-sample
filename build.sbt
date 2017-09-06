@@ -5,11 +5,11 @@ scalaVersion := "2.12.3"
 resolvers += Resolver.sonatypeRepo("releases")
 resolvers += Resolver.sonatypeRepo("snapshots")
 
-val akkaVersion = "2.5.3"
-val akkaHttpVersion = "10.0.9"
+val akkaVersion = "2.5.4"
+val akkaHttpVersion = "10.0.10"
 
 libraryDependencies ++= Seq(
-  "com.workday" %% "prometheus-akka" % "0.7.1-SNAPSHOT",
+  "com.workday" %% "prometheus-akka" % "0.8.0",
   "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-actor" % akkaVersion,
