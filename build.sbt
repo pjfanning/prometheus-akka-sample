@@ -8,6 +8,9 @@ resolvers += Resolver.sonatypeRepo("snapshots")
 val akkaVersion = "2.5.6"
 val akkaHttpVersion = "10.0.10"
 
+enablePlugins(JavaAgent)
+javaAgents += "org.aspectj" % "aspectjweaver" % "1.8.10" % "runtime"
+
 libraryDependencies ++= Seq(
   "com.workday" %% "prometheus-akka" % "0.8.1",
   "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
