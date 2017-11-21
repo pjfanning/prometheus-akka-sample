@@ -7,7 +7,7 @@ All you need to do is add a dependency on the prometheus-akka jar, add some conf
 
 ```./gradlew clean run```
 
-This sample uses [sbt-aspectj-runner](https://github.com/kamon-io/sbt-aspectj-runner) to enable aspectjweaver.
+This sample uses [sbt-javaagent](https://github.com/sbt/sbt-javaagent) to enable aspectjweaver.
 This plugin basically adds this to the java runtime command.
 
 ```-javaagent:/path/to/aspectjweaver-1.8.10.jar```
