@@ -14,8 +14,8 @@ repositories {
 ext {
     scalaVersion = '2.12'
     scalaPointVersion = "$scalaVersion.4"
-    akkaVersion = '2.5.7'
-    akkaHttpVersion = '10.0.10'
+    akkaVersion = '2.5.9'
+    akkaHttpVersion = '10.1.0-RC1'
     aspectjweaverVersion = '1.8.10'
 }
 
@@ -29,7 +29,7 @@ dependencies {
     compile "com.typesafe.akka:akka-slf4j_$scalaVersion:$akkaVersion"
     compile "com.typesafe.akka:akka-stream_$scalaVersion:$akkaVersion"
     compile "com.typesafe.akka:akka-http_$scalaVersion:$akkaHttpVersion"
-    compile "com.workday:prometheus-akka_$scalaVersion:0.8.1"
+    compile "com.workday:prometheus-akka_$scalaVersion:0.8.2"
     compile 'ch.qos.logback:logback-classic:1.2.3'
     runtime "org.aspectj:aspectjweaver:$aspectjweaverVersion"
     runAgent "org.aspectj:aspectjweaver:$aspectjweaverVersion"
