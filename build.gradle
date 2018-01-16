@@ -16,7 +16,7 @@ ext {
     scalaPointVersion = "$scalaVersion.4"
     akkaVersion = '2.5.9'
     akkaHttpVersion = '10.1.0-RC1'
-    aspectjweaverVersion = '1.8.10'
+    aspectjweaverVersion = '1.8.13'
 }
 
 configurations {
