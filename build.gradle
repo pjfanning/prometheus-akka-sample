@@ -29,7 +29,7 @@ dependencies {
     compile "com.typesafe.akka:akka-slf4j_$scalaVersion:$akkaVersion"
     compile "com.typesafe.akka:akka-stream_$scalaVersion:$akkaVersion"
     compile "com.typesafe.akka:akka-http_$scalaVersion:$akkaHttpVersion"
-    compile "com.workday:prometheus-akka_$scalaVersion:0.8.2"
+    compile "com.workday:prometheus-akka_$scalaVersion:0.8.3"
     compile 'ch.qos.logback:logback-classic:1.2.3'
     runtime "org.aspectj:aspectjweaver:$aspectjweaverVersion"
     runAgent "org.aspectj:aspectjweaver:$aspectjweaverVersion"
