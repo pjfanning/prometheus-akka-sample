@@ -12,7 +12,7 @@ enablePlugins(JavaAgent)
 javaAgents += "org.aspectj" % "aspectjweaver" % "1.8.13" % "runtime"
 
 libraryDependencies ++= Seq(
-  "com.workday" %% "prometheus-akka" % "0.8.4-SNAPSHOT",
+  "com.workday" %% "prometheus-akka" % "0.8.4",
   "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-actor" % akkaVersion,
