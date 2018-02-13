@@ -6,7 +6,7 @@ resolvers += Resolver.sonatypeRepo("releases")
 resolvers += Resolver.sonatypeRepo("snapshots")
 
 val akkaVersion = "2.5.9"
-val akkaHttpVersion = "10.1.0-RC1"
+val akkaHttpVersion = "10.1.0-RC2"
 
 enablePlugins(JavaAgent)
 javaAgents += "org.aspectj" % "aspectjweaver" % "1.8.13" % "runtime"
