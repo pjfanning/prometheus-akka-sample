@@ -14,8 +14,8 @@ repositories {
 ext {
     scalaVersion = '2.12'
     scalaPointVersion = "$scalaVersion.4"
-    akkaVersion = '2.5.9'
-    akkaHttpVersion = '10.1.0-RC1'
+    akkaVersion = '2.5.10'
+    akkaHttpVersion = '10.1.0-RC2'
     aspectjweaverVersion = '1.8.13'
 }
 
