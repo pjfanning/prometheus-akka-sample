@@ -1,6 +1,6 @@
 name := "prometheus-akka-sample"
 
-scalaVersion := "2.12.4"
+scalaVersion := "2.13.0-M3"
 
 resolvers += Resolver.sonatypeRepo("releases")
 resolvers += Resolver.sonatypeRepo("snapshots")
@@ -12,7 +12,7 @@ enablePlugins(JavaAgent)
 javaAgents += "org.aspectj" % "aspectjweaver" % "1.8.13" % "runtime"
 
 libraryDependencies ++= Seq(
-  "com.workday" %% "prometheus-akka" % "0.8.5",
+  "com.workday" %% "prometheus-akka" % "0.8.6-SNAPSHOT",
   "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-actor" % akkaVersion,
