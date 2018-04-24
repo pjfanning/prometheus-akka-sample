@@ -1,4 +1,6 @@
 *.class
 *.log
+.gradle
 .idea
 prometheus-akka-sample.iml
+target

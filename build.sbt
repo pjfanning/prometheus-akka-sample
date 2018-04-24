@@ -5,11 +5,11 @@ scalaVersion := "2.12.5"
 resolvers += Resolver.sonatypeRepo("releases")
 resolvers += Resolver.sonatypeRepo("snapshots")
 
-val akkaVersion = "2.5.11"
+val akkaVersion = "2.5.12"
 val akkaHttpVersion = "10.1.1"
 
 enablePlugins(JavaAgent)
-javaAgents += "org.aspectj" % "aspectjweaver" % "1.8.13" % "runtime"
+javaAgents += "org.aspectj" % "aspectjweaver" % "1.9.1" % "runtime"
 
 libraryDependencies ++= Seq(
   "com.workday" %% "prometheus-akka" % "0.8.5",
