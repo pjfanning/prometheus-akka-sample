@@ -1,5 +1,7 @@
 # prometheus-akka-sample
 
+This sample has been superceded by [micrometer-akka-sample](https://github.com/pjfanning/micrometer-akka-sample).
+
 This sample demonstrates how to add [Prometheus-Akka](https://github.com/Workday/prometheus-akka) metrics to your application.
 All you need to do is add a dependency on the prometheus-akka jar, add some configuration to your [application.conf](https://github.com/pjfanning/prometheus-akka-sample/blob/master/src/main/resources/application.conf) and to enable aspectjweaver.
 
